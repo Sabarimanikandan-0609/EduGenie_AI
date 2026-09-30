@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="EduGenie - Google Gemini powered learning assistant"
+  />
+
+  <title>EduGenie - AI Learning Assistant</title>
+
+  <link
+    rel="stylesheet"
+    href="/static/styles.css"
+  />
+
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+      <div class="badge">
+        🧠 Gemini Powered Learning
+      </div>
+
+      <h1>
+        Welcome to EduGenie ✨
+      </h1>
+
+      <p>
+        Your personal AI learning assistant
+      </p>
+
+      <div
+        id="status"
+        class="status"
+      >
+        Checking AI configuration...
+      </div>
+
+    </header>
+
+
+    <!-- FEATURES -->
+
+    <section class="grid">
+
+
+      <!-- Q&A -->
+
+      <article class="card">
+
+        <div class="icon">
+          💬
+        </div>
+
+        <h2>
+          Ask EduGenie
+        </h2>
+
+        <p class="description">
+          Ask any educational question
+          and get a clear AI-generated answer.
+        </p>
+
+        <form id="qaForm">
+
+          <input
+            id="question"
+            type="text"
+            placeholder="Example: What is artificial intelligence?"
+            required
+          />
+
+          <button type="submit">
+            Get Answer
+          </button>
+
+        </form>
+
+        <div
+          id="qaResult"
+          class="output"
+        ></div>
+
+      </article>
+
+
+      <!-- EXPLANATION -->
+
+      <article class="card">
+
+        <div class="icon">
+          📚
+        </div>
+
+        <h2>
+          Explain a Topic
+        </h2>
+
+        <p class="description">
+          Understand difficult concepts
+          in simple language.
+        </p>
+
+        <form id="explainForm">
+
+          <input
+            id="topic"
+            type="text"
+            placeholder="Example: Machine Learning"
+            required
+          />
+
+          <button type="submit">
+            Explain Topic
+          </button>
+
+        </form>
+
+        <div
+          id="explanationResult"
+          class="output"
+        ></div>
+
+      </article>
+
+
+      <!-- SUMMARIZER -->
+
+      <article class="card">
+
+        <div class="icon">
+          📝
+        </div>
+
+        <h2>
+          Summarize Text
+        </h2>
+
+        <p class="description">
+          Paste a paragraph and get
+          the important points.
+        </p>
+
+        <form id="summaryForm">
+
+          <textarea
+            id="summaryText"
+            placeholder="Paste your paragraph here..."
+            required
+          ></textarea>
+
+          <button type="submit">
+            Summarize
+          </button>
+
+        </form>
+
+        <div
+          id="summaryResult"
+          class="output"
+        ></div>
+
+      </article>
+
+
+      <!-- QUIZ -->
+
+      <article class="card">
+
+        <div class="icon">
+          🧠
+        </div>
+
+        <h2>
+          Generate Quiz
+        </h2>
+
+        <p class="description">
+          Generate 3 multiple-choice
+          questions from your study material.
+        </p>
+
+        <form id="quizForm">
+
+          <textarea
+            id="quizText"
+            placeholder="Paste your study material here..."
+            required
+          ></textarea>
+
+          <button type="submit">
+            Generate Quiz
+          </button>
+
+        </form>
+
+        <div
+          id="quizResult"
+          class="output"
+        ></div>
+
+      </article>
+
+
+      <!-- LEARNING PATH -->
+
+      <article class="card wide">
+
+        <div class="icon">
+          🚀
+        </div>
+
+        <h2>
+          Learning Recommendations
+        </h2>
+
+        <p class="description">
+          Get a beginner-to-advanced
+          learning roadmap.
+        </p>
+
+        <form id="learningForm">
+
+          <input
+            id="learningTopic"
+            type="text"
+            placeholder="Example: Python Programming"
+            required
+          />
+
+          <button type="submit">
+            Build Learning Path
+          </button>
+
+        </form>
+
+        <div
+          id="learningResult"
+          class="output"
+        ></div>
+
+      </article>
+
+    </section>
+
+
+    <footer>
+
+      <p>
+        EduGenie
+        •
+        FastAPI
+        +
+        Google Gemini
+      </p>
+
+    </footer>
+
+  </main>
+
+
+  <script
+    src="/static/app.js"
+    defer
+  ></script>
+
+</body>
+
+</html>
